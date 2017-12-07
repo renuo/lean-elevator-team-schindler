@@ -12,8 +12,7 @@ post '/decide' do
 
   # Do the calculations
   puts "Got: \n#{params_json}"
-  target_level = 1
+  target_level = [0..14].sample
 
   target_level.to_json
 end
-
