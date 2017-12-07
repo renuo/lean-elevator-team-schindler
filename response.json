@@ -1,0 +1,25 @@
+{
+  "elevator": {
+    "capacity": 6,
+    "current_floor": 0,
+    "target_floors": [14, 13, 12, 14, 12, 13],
+    "statistics": 556
+  },
+  "floors": [
+    { "panel": { "up": false, "down": false } },
+    { "panel": { "up": false, "down": false } },
+    { "panel": { "up": false, "down": false } },
+    { "panel": { "up": true, "down": true } },
+    { "panel": { "up": true, "down": false } },
+    { "panel": { "up": false, "down": false } },
+    { "panel": { "up": false, "down": true } },
+    { "panel": { "up": false, "down": false } },
+    { "panel": { "up": true, "down": false } },
+    { "panel": { "up": false, "down": false } },
+    { "panel": { "up": true, "down": true } },
+    { "panel": { "up": true, "down": true } },
+    { "panel": { "up": false, "down": true } },
+    { "panel": { "up": false, "down": false } },
+    { "panel": { "up": false, "down": true } }
+  ]
+}

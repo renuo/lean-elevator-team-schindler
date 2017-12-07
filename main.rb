@@ -14,7 +14,13 @@ post '/decide' do
 
   # Do the calculations
   puts "Got: \n#{params_json}"
-  target_level = params_json['elevator']['target_floors'].first || (0..14).to_a.sample
+  target_level = params_json['elevator']['target_floors'].first || first_floor_with_people(params_json['floors'])
 
   target_level.to_json
+end
+
+def first_floor_with_people(floors)
+  floors.find_index do |floor|
+    floor['panel']['up'] || floor['panel']['down']
+  end
 end
